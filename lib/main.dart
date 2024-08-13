@@ -7,8 +7,7 @@ import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-   MyApp(),
-
+    MyApp(),
   );
 }
 
@@ -19,27 +18,22 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
         designSize: const Size(411.42857142857144, 843.4285714285714),
-      minTextAdapt: true,
-      splitScreenMode: true,
-      builder: (context, child) {
-        return MultiProvider(
-          providers: [
-            ChangeNotifierProvider(
-              create: (context) => RestaurantItemProvider(),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, child) {
+          return MultiProvider(
+            providers: [
+              ChangeNotifierProvider(
+                create: (context) => RestaurantItemProvider(),
+              ),
+            ],
+            child: MaterialApp(
+              title: 'Zomato Clone',
+              debugShowCheckedModeBanner: false,
+              theme: CustomTheme.theme,
+              home: HomeScreen(),
             ),
-          ],
-          child: MaterialApp(
-            title: 'Zomato Clone',
-            debugShowCheckedModeBanner: false,
-            theme: CustomTheme.theme,
-            home: HomeScreen(),
-          ),
-        );
-      }
-    );
-
-
+          );
+        });
   }
 }
-
-

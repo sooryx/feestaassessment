@@ -69,7 +69,7 @@ class _FormAddScreenState extends State<FormAddScreen> {
 
                 if (title.isNotEmpty && price > 0 && imageUrl.isNotEmpty) {
                   final newFoodItem = RestaurantItem(
-                    imageUrl: imageUrl, // Save the image URL
+                    imageUrl: imageUrl,
                     title: title,
                     category: 'Category',
                     price: price,
@@ -87,7 +87,7 @@ class _FormAddScreenState extends State<FormAddScreen> {
                 }
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor:  Theme.of(context).primaryColor, // Background color
+                backgroundColor:  Theme.of(context).primaryColor,
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(8),

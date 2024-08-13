@@ -29,9 +29,7 @@ class CustomTheme {
           titleLarge: GoogleFonts.bebasNeue(
             textStyle: TextStyle(color: Colors.white, fontSize: 45.sp),
           ),
-          // titleMedium:  GoogleFonts.bebasNeue(
-          //   textStyle: TextStyle(color: Colors.white, fontSize: 25.sp),
-          // ),
+
           headlineMedium: GoogleFonts.openSans(
             textStyle: TextStyle(color: Colors.white, fontSize: 22.sp),
           ),
